@@ -21,11 +21,11 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-development:
+development: &development
   <<: *default
   database: bookstore-backend_development
-  username: postgres
-  password: our-awesome-bookstore-app
+  username: ibrahimmohamed
+  password: hima13101992
   host: localhost
 
   # The specified database role being used to connect to postgres.
